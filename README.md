@@ -10,7 +10,12 @@ Python program that given a directory with input files, creates a file with comm
     
 1.2 Change directory to where you downloaded the code 
 
-1.3 Simply run `python pipelinebuild/pipeline_build.py -h` for usage information.
+1.3 Simply run `python setup.py install` if you want to install globally or
+simply run `python setup.py install --user` if you want to install for the local user.
+
+1.4 For usage information, simply run `pipelinebuild -h` after installation as above or 
+simply run `python pipelinebuild/pipeline_build.py -h` if you want to try without installing.
+
 
 ```{r}
 usage: pipeline_build.py [-h] [--version] -commandsFile CMD_FILE

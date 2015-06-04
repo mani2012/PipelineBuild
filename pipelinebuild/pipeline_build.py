@@ -69,5 +69,9 @@ parser.add_argument('-outDir', action='store', default='.', dest='outdir',
 parser.add_argument('-outFile', action='store', default='pipeline_commands.sh', dest='outfile',
     help='Output File name (Default=pipeline_commands.sh (current directory))')
 
-inputArgs = parser.parse_args()
-generateCommands(inputArgs)
+def main():
+    inputArgs = parser.parse_args()
+    generateCommands(inputArgs)
+
+if __name__ == "__main__":
+    main()
