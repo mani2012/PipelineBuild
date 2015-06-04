@@ -1,0 +1,3 @@
+pathoscope/pathoscope.py MAP -1 @@FILE1@@ -2 @@FILE2@@ -targetIndexPrefixes bacteria_ti_0,bacteria_ti_1 -filterIndexPrefixes human1_bowtie2,human2_bowtie2 -indexDir indexdir -outDir outdir -outAlign @@FILE1MATCH@@.sam -expTag @@FILE1MATCH@@ -targetAlignParams "--very-sensitive-local -k 10 --score-min L,20,1.0"
+rm -f outdir/@@FILE1MATCH@@-*.*
+pathoscope.py --verbose ID --noUpdatedAlignFile --noDisplayCutoff -alignFile outdir/@@FILE1MATCH@@.sam -outDir outdir -expTag @@FILE1MATCH@@
