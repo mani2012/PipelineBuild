@@ -42,12 +42,13 @@ def generateCommands(inputArgs):
                         ln = ln.replace("@@FILE1@@", f1)
                     if len(files2) > count:
                         if "@@FILE2@@" in ln:
-                            ln = ln.replace("@@FILE2@@", f1)
+                            ln = ln.replace("@@FILE2@@", files2[count])
                     if "@@FILE1MATCH@@" in ln:
                         fname = os.path.split(f1)[1]
                         f1match = re.split(inputArgs.file1_pattern, fname)[0]
                         ln = ln.replace("@@FILE1MATCH@@", f1match)
                     out1.write(ln)
+            count += 1
 
 
 
