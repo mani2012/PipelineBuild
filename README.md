@@ -29,9 +29,9 @@ optional arguments:
   -inputDir INPUTDIR    Input Directory where the files to be analyzed are
                         located (Default=. (current directory))
   -file1Pattern FILE1_PATTERN
-                        File1 matching pattern (default: R1.fastq.gz)
+                        File1 matching pattern (default: .R1.fastq.gz)
   -file2Pattern FILE2_PATTERN
-                        File2 matching pattern (default: R2.fastq.gz)
+                        File2 matching pattern (default: .R2.fastq.gz)
   -outDir OUTDIR        Output Directory (Default=. (current directory))
   -outFile OUTFILE      Output File name (Default=pipeline_commands.sh
                         (current directory))

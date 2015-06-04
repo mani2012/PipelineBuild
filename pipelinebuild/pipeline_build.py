@@ -60,9 +60,9 @@ parser.add_argument('-commandsFile', action='store', dest='cmd_file', required=T
 parser.add_argument('-inputDir', action='store', default='.', dest='inputdir',
     help='Input Directory where the files to be analyzed are located (Default=. (current directory))')
 parser.add_argument('-file1Pattern', action='store', dest='file1_pattern', required=False, 
-    default="R1.fastq.gz", help='File1 matching pattern (default: R1.fastq.gz)')
+    default=".R1.fastq.gz", help='File1 matching pattern (default: .R1.fastq.gz)')
 parser.add_argument('-file2Pattern', action='store', dest='file2_pattern', required=False, 
-    default="R2.fastq.gz", help='File2 matching pattern (default: R2.fastq.gz)')
+    default=".R2.fastq.gz", help='File2 matching pattern (default: .R2.fastq.gz)')
 parser.add_argument('-outDir', action='store', default='.', dest='outdir',
     help='Output Directory (Default=. (current directory))')
 parser.add_argument('-outFile', action='store', default='pipeline_commands.sh', dest='outfile',
