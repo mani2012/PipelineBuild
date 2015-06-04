@@ -40,7 +40,7 @@ optional arguments:
 
 ####  2. Support and Contact
 
-SplitQsub is developed by Solaiappan Manimaran.
+PipelineBuild is developed by Solaiappan Manimaran.
 
 Department of Biostatistics  
 School of Public Health  
