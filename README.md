@@ -11,7 +11,9 @@ Python program that given a directory with input files, creates a file with comm
 1.2 Change directory to where you downloaded the code 
 
 1.3 Simply run `python setup.py install` if you want to install globally or  
-simply run `python setup.py install --user` if you want to install for the local user.
+simply run `python setup.py install --user` if you want to install for the local user.  
+If you have never installed another python module before or you do not have python setuptools  
+simply run `python install.py`, which will use ez_setup.py to bootstrap the right version of the package installer tooling for you.
 
 1.4 For usage information, simply run `pipelinebuild -h` after installation as above or  
 simply run `python pipelinebuild/pipeline_build.py -h` if you want to try without installing.
